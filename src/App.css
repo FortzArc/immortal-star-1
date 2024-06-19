@@ -1,0 +1,197 @@
+.App {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000;
+}
+
+body {
+  background-color: black;
+}
+
+.play-games {
+  text-align: center;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start; /* Adjust as needed */
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  width: 100%; /* Adjust the width dynamically based on content */
+}
+
+.image-container img {
+  width: 15%;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+  animation: scroll 20s linear infinite; /* Adjust animation duration as needed */
+  image-rendering: pixelated;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); } /* Start position */
+  100% { transform: translateX(calc(-250px - 20px)); } /* End position */
+}
+
+.image-container img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+img {
+  width: 240px;
+  height: auto;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 12px;
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.modal iframe {
+  width: 100%;
+  height: 77vh;
+  border: none;
+}
+
+.modal button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.title-bar {
+  background-color: transparent;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 1000;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  margin-left: auto;
+  padding: 10px;
+  font-size: larger;
+}
+
+.navigation a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+.episode-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.episode-modal {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.episode-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.episode-modal-close-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.episode-modal-close-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
