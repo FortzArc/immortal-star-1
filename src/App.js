@@ -77,7 +77,7 @@ const images = [
   // Add more images here
 ];
 const imageTDM = [
-  { id: 1, url: image8, website: 'https://game1.isgaming.club/' },
+  { id: 1, url: image8, website: 'https://game1.isgaming.club/#/cast/1' },
 
   // Add more images here
 ];
