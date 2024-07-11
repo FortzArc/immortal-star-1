@@ -206,8 +206,8 @@ const App = () => {
         episode={selectedEpisode}
       />
        <div className="play-games">
-          <h1>Doom Episode 1: I am knees deep in the dead</h1>
-          <h4>Yes anything can run Doom</h4>
+          <h1>Doom Episode 1: Knee Deep In the Dead</h1>
+          <h3>(Yes anything can run Doom)</h3>
           <div >
     {imageTDM.map(imageTDM => (
       <img
