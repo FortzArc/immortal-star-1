@@ -68,11 +68,6 @@ const images = [
     url: image7,
     website: "https://www.crazygames.com/embed/dead-land-survival",
   },
-  {
-    id: 8,
-    url: image7,
-    website: "http://3.7.235.231:8081/",
-  },
 
   // Add more images here
 ];
@@ -211,7 +206,8 @@ const App = () => {
         episode={selectedEpisode}
       />
        <div className="play-games">
-          <h1>Episode 1: The Dark Mod (Beta Testing)</h1>
+          <h1>Doom Episode 1: I am knees deep in the dead</h1>
+          <h4>Yes anything can run Doom</h4>
           <div >
     {imageTDM.map(imageTDM => (
       <img
