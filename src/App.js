@@ -8,7 +8,7 @@ import image4 from './Images/writtenrealms.png';
 import image5 from './Images/kuzbass.jpg';
 import image6 from './Images/youarebeingwatched.png';
 import image7 from './Images/deadlandsurvival.png'
-import image8 from './Images/TDMEpisode1.jpg'
+import image8 from './Images/DoomImg.jpg'
 import TitleBar from './TitleBar';
 import TrailerPlayer from './TrailerPlayer';
 import FullScreenButton from './FullScreenButton';
